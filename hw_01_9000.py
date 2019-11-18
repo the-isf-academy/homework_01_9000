@@ -38,6 +38,8 @@ def dict_merge(dict0, dict1):
     """
     Takes two dictionaries of string-string key-value pairs and merges them into a single dictionary
     with each key-value pair. If a key exists in both dictionaries, the function uses the value
-    from dict1, not dict0. 
+    from dict1, not dict0.
         >>> merge_dict({'red': 'rojo', 'blue': 'azul'}, {'purple': '紫色', 'blue': '蓝色'})
         {'red': 'rojo', 'blue': '蓝色', 'purple': '紫色'}
+    """
+    return []
