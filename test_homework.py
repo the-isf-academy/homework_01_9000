@@ -35,9 +35,9 @@ class TestHomework_01_9000(unittest.TestCase):
         self.assertEqual(list_max([3], [2]), [3])
         self.assertEqual(list_max([], []), [])
     def test_dict_merge(self):
-        self.assertEqual(dict_merge({'red': 'rojo', 'blue': 'azul'}, {'purple': '紫色', 'blue': '蓝色'}), {'red': 'rojo', 'blue': 'azul 蓝色', 'purple': '紫色'})
+        self.assertEqual(dict_merge({'red': 'rojo', 'blue': 'azul'}, {'purple': '紫色', 'blue': '蓝色'}), {'red': 'rojo', 'blue': '蓝色', 'purple': '紫色'})
         self.assertEqual(dict_merge({'red': 'rojo'}, {'purple': '紫色', 'blue': '蓝色'}), {'red': 'rojo', 'blue': '蓝色', 'purple': '紫色'})
-        self.assertEqual(dict_merge({'red': 'rojo', 'blue': 'azul'}, {'red': '红色', 'blue': '蓝色'}), {'red': 'rojo 红色', 'blue': 'azul 蓝色'})
+        self.assertEqual(dict_merge({'red': 'rojo', 'blue': 'azul'}, {'red': '红色', 'blue': '蓝色'}), {'red': '红色', 'blue': '蓝色'})
         self.assertEqual(dict_merge({}, {'red': '红色', 'blue': '蓝色'}), {'red': '红色', 'blue': '蓝色'})
         self.assertEqual(dict_merge({}, {}), {})
 
