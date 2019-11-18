@@ -37,9 +37,7 @@ def list_max(values0, values1):
 def dict_merge(dict0, dict1):
     """
     Takes two dictionaries of string-string key-value pairs and merges them into a single dictionary
-    with each key-value pair. If a key exists in both dictionaries, the function appends the value
-    from dict2 to the value from dict1 with a space inbetween and associates the new value with the key.
-
+    with each key-value pair. If a key exists in both dictionaries, the function uses the value
+    from dict1, not dict0. 
         >>> merge_dict({'red': 'rojo', 'blue': 'azul'}, {'purple': '紫色', 'blue': '蓝色'})
-        {'red': 'rojo', 'blue': 'azul 蓝色', 'purple': '紫色'}
-    """
+        {'red': 'rojo', 'blue': '蓝色', 'purple': '紫色'}
