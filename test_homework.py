@@ -7,7 +7,7 @@
 
 import unittest
 
-from hw_01_9000_solutions import *
+from hw_01_9000 import *
 
 class TestHomework_01_9000(unittest.TestCase):
 
