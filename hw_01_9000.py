@@ -26,11 +26,11 @@ def list_subtract(values0, values1):
 
 def list_max(values0, values1):
     """
-    Returns the elementwise max of two lists. For each pair of items from `values0`
-    and `values1`, the larger is in the result list.
+    Returns the elementwise max of two lists. For each index in the lists, compares the element 
+    from `values0` to the element from `values1` and places the larger element in the result list.
 
-        >>> list_max([1, 2, 3, 4], [5, 4, 3, 2])
-        [5, 4, 3, 4]
+        >>> list_max([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])
+        [5, 4, 3, 4, 5]
     """
     return []
 
